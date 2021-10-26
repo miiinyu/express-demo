@@ -1,0 +1,22 @@
+@url=http://localhost:3000/api
+
+GET {{url}}/getUsers
+###
+POST {{url}}/register
+Content-Type: application/json
+
+{
+    "username":"user02",
+    "password":"1q2w3e4r"
+}
+###
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "username":"user02",
+    "password":"1q2w3e4r"
+}
+###
+GET {{url}}/getProfile
+Authorization: Bearea eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGVjODU1NzY4NjVlMjkxY2JjYTZkNyIsImlhdCI6MTYxOTk3MDE0MX0.ks-5IuwPtETY5PlizBUYN_4-cpT4ODlQEdmYIjO_-Yk
